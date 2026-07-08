@@ -1,0 +1,91 @@
+class Game {
+  final String id;
+  final String name;
+  final String category;
+  final String icon;
+  final bool isCompleted;
+  final int starsEarned;
+  final String url;
+
+  Game({
+    required this.id,
+    required this.name,
+    required this.category,
+    required this.icon,
+    this.isCompleted = false,
+    this.starsEarned = 0,
+    this.url = '',
+  });
+
+  static List<Game> getAllGames() {
+    return [
+      Game(id: 'abc', name: 'ABC English', category: 'Language', icon: '🔤',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#abc'),
+      Game(id: 'numbers', name: 'Numbers', category: 'Math', icon: '🔢',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#numbers'),
+      Game(id: 'coloring', name: 'Coloring', category: 'Art', icon: '🎨',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#coloring'),
+      Game(id: 'flags', name: 'Flag Quiz', category: 'Geo', icon: '🌍',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#flags'),
+      Game(id: 'memory', name: 'Memory Match', category: 'Brain', icon: '🧠',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#memory'),
+      Game(id: 'bingo', name: 'Math Bingo', category: 'Math', icon: '🔢',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#bingo'),
+      Game(id: 'scramble', name: 'Scramble', category: 'Language', icon: '🔤',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#scramble'),
+      Game(id: 'color', name: 'Color by Number', category: 'Art', icon: '🎨',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#color'),
+      Game(id: 'typing', name: 'Typing Tutor', category: 'Skills', icon: '⌨️',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#typing'),
+      Game(id: 'geo', name: 'Geography', category: 'Geo', icon: '🌍',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#geo'),
+      Game(id: 'search', name: 'Word Search', category: 'Language', icon: '🔍',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#search'),
+      Game(id: 'animal', name: 'Animal Sounds', category: 'Science', icon: '🐄',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#animal'),
+      Game(id: 'story', name: 'Story Builder', category: 'Creative', icon: '📖',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#story'),
+      Game(id: 'phonics', name: 'Phonics', category: 'Language', icon: '🔤',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#phonics'),
+      Game(id: 'multiply', name: 'Times Tables', category: 'Math', icon: '✖️',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#multiply'),
+      Game(id: 'vocab', name: 'Vocabulary', category: 'Language', icon: '📝',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#vocab'),
+      Game(id: 'music', name: 'Music Maker', category: 'Music', icon: '🎵',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#music'),
+      Game(id: 'animate', name: 'Animation', category: 'Creative', icon: '🎬',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#animate'),
+      Game(id: 'arabic', name: 'Arabic', category: 'Language', icon: '🌙',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#arabic'),
+      Game(id: 'math', name: 'Math', category: 'Math', icon: '➕',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#math'),
+      Game(id: 'numbermatch', name: 'Number Match', category: 'Math', icon: '🔢',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#numbermatch'),
+      Game(id: 'alphabet', name: 'Alphabet Adventure', category: 'Language', icon: '🔤',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#alphabet'),
+      Game(id: 'mathbingo', name: 'Math Bingo Pro', category: 'Math', icon: '➕',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#mathbingo'),
+      Game(id: 'colorlearn', name: 'Color Learning', category: 'Art', icon: '🎨',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#colorlearn'),
+      Game(id: 'shapepuzzle', name: 'Shape Puzzle', category: 'Brain', icon: '🧩',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#shapepuzzle'),
+      Game(id: 'fruitveg', name: 'Fruit & Veg', category: 'Science', icon: '🍎',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#fruitveg'),
+      Game(id: 'timetelling', name: 'Time Telling', category: 'Skills', icon: '🕐',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#timetelling'),
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#money'),
+      Game(id: 'measurement', name: 'Measurement', category: 'Math', icon: '📏',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#measurement'),
+      Game(id: 'spotdiff', name: 'Spot Difference', category: 'Brain', icon: '🎯',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#spotdiff'),
+      Game(id: 'numberseq', name: 'Number Sequence', category: 'Math', icon: '🔢',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#numberseq'),
+      Game(id: 'spelling', name: 'Spelling Bee', category: 'Language', icon: '📝',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#spelling'),
+      Game(id: 'shapes', name: 'Shapes', category: 'Math', icon: '⬛',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#shapes'),
+      Game(id: 'bakeyle', name: 'Bakeyle Ice Cream', category: 'Fun', icon: '🍦',
+          url: 'https://ayuubgaafaa.github.io/KidLearnPro/#bakeyle'),
+    ];
+  }
+}
